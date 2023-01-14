@@ -1,0 +1,43 @@
+:root {
+    --bg: #ffffff;
+    --primary:#EB6C27;
+    --text:#3A3A3A;
+    --text-gray: #888888;
+
+}
+
+body {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.button {
+    padding: 6px;
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+/* MOBILE 360w verze */
+
+/*INDEX*/
+
+
+
+
+.header__cta {
+    display: none;
+}
+
+
+
+
+
+/* DESKTOP 1920w verze */
+@media (min-width: 1920px) {
+
+
+}
+
