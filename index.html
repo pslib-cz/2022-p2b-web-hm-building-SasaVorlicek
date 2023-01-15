@@ -11,7 +11,8 @@
 <body>
     <nav class="page-navbar">
         <img class="page-navbar__logo" alt="Logo stránky" src="media/logo.png">
-        <ul class="page-navbar__items">
+        <button class="page-navbar__hamburger" onclick="Hamburger()">&#xe9bd;</button>
+        <ul id="hamburger" class="page-navbar__items">
             <li>DOMŮ</li>
             <li>SLUŽBY</li>
             <li>REFERENCE</li>
@@ -25,7 +26,7 @@
         <p class="page-header__cta"><a class="button">pokračovat</a></p>
     </header> 
     
-    <section clas="services">
+    <section class="services">
         <header class="services/reference-header">
             <h3 clas="services/reference-header__heading">Využijte škálu našich <span class="colored-text">služeb</span></h3>
             <p clas="services/reference-header__text">Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
@@ -95,5 +96,11 @@
         <p class="page-footer_cta"><a class="button button-white">Nezávazně poptat</a></p>
     </footer>
 
+
+    <script>
+        function Hamburger() {
+            document.getElementById("hamburger").classList.toggle("is-active");
+            }
+    </script>
 </body>
 </html>
