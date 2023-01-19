@@ -111,7 +111,7 @@ p {
 
 .page-navbar__items {
     display: none;
-    list-style-type: none; /*ggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
+    list-style-type: none; 
     margin: 0;
     background-color: var(--primary);
     
@@ -357,7 +357,7 @@ p {
         position: absolute;
         top: 30px;
         width: 90%;
-        left: 0; /*nejde vycentrovat*/
+        left: 0;       /*nejde vycentrovat*/
         right: 0;
     }
 
@@ -366,24 +366,26 @@ p {
     }
 
     .page-navbar__items {
+        position: static;
         background-color: #ffffff;
-        justify-content: space-between;
         width: 40%;
         padding: 0;
         padding-right: 25px;;
         display: flex;
-        position: static;
+        justify-content: space-between;
     }
 
     .page-navbar__items li {
         color: var(--text);
         text-decoration: none;
         font-weight: 400;
+        height: inherit;
         font-size: 0.8em;
         padding: 0;
+        align-self: center;
     }
 
-    .page-navbar__items li:hover {
+    .page-navbar__items li:hover {      /*dodělat*/
         background-color: var(--primary);
         color: #ffffff;
     }
