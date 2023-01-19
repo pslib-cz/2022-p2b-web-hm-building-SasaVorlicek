@@ -35,6 +35,11 @@ figure {
 
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
+    color: var(--text);
+}
+
+p {
+    color: var(--text);
 }
 
 .button {
@@ -106,7 +111,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .page-navbar__items {
     display: none;
-    list-style-type: none;
+    list-style-type: none; /*ggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
     margin: 0;
     background-color: var(--primary);
     
@@ -173,6 +178,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .page-header__cta {
     display: none;
+    text-align: center;
+}
+
+.page-header__cta .button::after {
+    padding-left: 5px;
+    font-family: Icons;
+    color: #ffffff;
 }
 
 .services, .reference {
@@ -195,7 +207,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .services__items {
-    
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 .services-item {
@@ -238,6 +252,9 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 170px;
     box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.8);
     padding: 5.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .promote__text {
@@ -285,7 +302,7 @@ h1,h2,h3,h4,h5,h6 {
 .page-footer {
     background-color: var(--primary);
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,16 +341,99 @@ h1,h2,h3,h4,h5,h6 {
 /* DESKTOP 1920w verze */
 @media (min-width: 1080px) {
 
+    .button {
+        font-weight: 500;
+    }
+
     .page-navbar__hamburger {
         display: none;
     }
 
+    .page-navbar__items::before {
+        display: none;
+    }
+
+    .page-navbar {
+        position: absolute;
+        top: 30px;
+        width: 90%;
+        left: 0; /*nejde vycentrovat*/
+        right: 0;
+    }
+
+    .page-navbar__logo {
+        margin: 10px;
+    }
+
     .page-navbar__items {
-        display: block;
+        background-color: #ffffff;
+        justify-content: space-between;
+        width: 40%;
+        padding: 0;
+        padding-right: 25px;;
+        display: flex;
+        position: static;
+    }
+
+    .page-navbar__items li {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8em;
+        padding: 0;
+    }
+
+    .page-navbar__items li:hover {
+        background-color: var(--primary);
+        color: #ffffff;
     }
 
     .page-header__cta {
         display: block;
+    }
+
+    .services {
+        margin: 0 100px;
+    }
+    .services_reference-header__heading {
+        text-align: center;
+        font-size: 2.6em;
+    } 
+
+    .services_reference-header__text {
+        text-align: center;
+        width: 62%;
+        margin: 16px auto;
+    }
+
+    .services__items {
+        grid-template-columns: 1fr 1fr;
+        gap: 55px;
+        grid-auto-flow: dense;
+        align-items: center;
+    }
+
+    .services-item__img--even {
+        grid-column-start: 2;
+    }
+
+    .reference-item {
+        
+    }
+
+    .reference-item__info {
+    }
+
+
+
+
+
+    .page-footer { 
+        margin-top: 180px;
+    }
+
+    .page-footer__heading {
+        font-size: 2.6em;
     }
 
 }
