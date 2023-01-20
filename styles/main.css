@@ -99,10 +99,10 @@ p {
 .page-navbar__logo {
     height: 40px;
     width: auto;
-    margin: 25px 10px; /*vycentrovat hamburger i logo stejně od kraje, logo má nějaký okraj už v obrázku?*/
+    margin: 30px 5px;
 }
 
-.page-navbar__hamburger {
+.page-navbar__hamburger {                                           /*text MENU nad hamburger*/
     padding: 0;
     border: none;
     background-color: white;
@@ -165,11 +165,15 @@ p {
     display: block;
 }
 
+.website-page-header {
+    position: relative;
+}
+
 .page-header {
     box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.8);
-    background-image: url("../media/pageheader-1920w.jpg"); /*Zoom do obrázku*/
+    background-image: url("../media/pageheader-1920w.jpg");
 
-    min-height: 50vh;
+    min-height: 40vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,6 +258,7 @@ p {
 .services-item__heading {
     font-family: OpenSans;
     font-weight: 700;
+    font-size: 1.3em;
     padding-bottom: 15px;
 }
 
@@ -265,7 +270,7 @@ p {
 }
 
 .promote {
-    background-image: url("../media/background-CTAblock-4460w.jpg"); /*Zoom do fotky*/
+    background-image: url("../media/background-CTAblock-4460w.jpg");
     background-color: #888888;
     background-size: cover;
     background-position: center center;
@@ -357,8 +362,6 @@ p {
 
 
 
-
-
 /* DESKTOP 1920w verze */
 @media (min-width: 1080px) {
 
@@ -374,9 +377,11 @@ p {
         display: none;
     }
 
-    .page-navbar {
+    .page-navbar {                                        /* vycentrovat na střed */
         position: absolute;
+        width: 80%;
         margin-top: 30px;
+        right: 0;
     }
 
     .page-navbar__logo {
@@ -403,13 +408,22 @@ p {
         align-self: center;
     }
 
-    .page-navbar__items li:hover {      /*dodělat*/
+    .page-navbar__items li:hover {                                   /*dodělat*/ 
         background-color: var(--primary);
         color: #ffffff;
     }
 
     .page-header {
         min-height: 70vh;
+        padding-bottom: 35px;
+    }
+
+    .page-header__main-heading {
+        font-size: 4em;
+    }
+
+    .page-header__second-heading {
+        font-size: 2em;
     }
 
     .page-header__cta {
@@ -418,6 +432,7 @@ p {
 
     .services {
         margin: 0 100px;
+        margin-top: 100px;
     }
     .services_reference-header__heading {
         text-align: center;
@@ -441,11 +456,24 @@ p {
         grid-column-start: 2;
     }
 
-    .reference-item {
-        
+    .promote {
+        margin-top: 100px;
+    }
+
+    .promote__text {
+        font-size: 1.5em;
+    }
+
+    .reference {
+        margin-top: 110px;
+    }
+
+    .reference-item {                         /* dodělat skrytí textu a jeho nahození na obrázek */
+        color:rgba(39, 39, 39, 0.8);
     }
 
     .reference-item__info {
+        color:#3A3A3A;
     }
 
 
@@ -463,4 +491,4 @@ p {
 }
 
 
-/*  https://www.w3schools.com/css/css3_images.asp
+/*  https://www.w3schools.com/css/css3_images.asp */
