@@ -25,7 +25,6 @@
 
 body {
     margin: 0;
-    position: relative;
     font-family: OpenSans, sans-serif;
 }
 
@@ -52,7 +51,7 @@ p {
 }
 
 .button-2 {
-    border: 1px dashed #EB6C27;  /*Lepší dashed border, není tak tlustý*/
+    border: 1px dashed #EB6C27;
     color: var(--primary);
     background-color: #ffffff;
     padding: 12px 40px;
@@ -66,6 +65,19 @@ p {
     color: var(--primary);
     padding: 20px 50px;
 }
+
+.button--arrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 36px; 
+}
+
+.button--arrow::after {
+    content: "\e900";
+    font-family: Icons;
+    font-size: 1.8em; 
+}
+
 
 .colored-text {
     color: var(--primary);
@@ -81,6 +93,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .page-navbar__logo {
@@ -116,11 +129,12 @@ p {
     background-color: var(--primary);
     
     position: absolute;
-    width: 85%;
     padding: 35px 0;
     padding-left: 20px;
-    top: 90px;
-    margin-left: 20px; /* vycentrovat dropdown, left a right nefunguje?*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 1em;
 }
 
 .page-navbar__items::before {
@@ -129,12 +143,11 @@ p {
     height: 0; 
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    
     border-bottom: 18px solid var(--primary);
 
     position: absolute;
     top: -18px;
-    right: 16px;
+    right: 15px;
 }
 
 .page-navbar__items li {
@@ -154,9 +167,11 @@ p {
 
 .page-header {
     background-image: url("../media/pageheader-1920w.jpg"); /*Zoom do obrázku*/
+
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.8);
 }
 
 .page-header__main-heading {
@@ -164,7 +179,7 @@ p {
     text-align: center;
     padding-top: 90px;
     font-size: 1.9em;
-    font-weight: 800; /*špatný font-weight, na více místech*/
+    font-weight: 800;
 }
 
 .page-header__second-heading {
