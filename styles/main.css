@@ -160,9 +160,12 @@ a {
 
 .page-navbar__items li {
     padding-bottom: 16px;
-    color: #ffffff;
     text-decoration: underline;
     font-weight: 700;
+}
+
+.page-navbar__items li a {
+    color: #ffffff;
 }
 
 .page-navbar__items li:last-of-type { 
@@ -404,11 +407,14 @@ a {
     }
 
     .page-navbar__items li {
-        color: var(--text);
         text-decoration: none;
         font-weight: 400;
         font-size: 0.8em;
         padding: 0;
+    }
+
+    .page-navbar__items li a {
+        color: var(--text);
     }
 
     .nav-active {
@@ -422,7 +428,7 @@ a {
     }
 
     .page-header {
-        min-height: 70vh;
+        min-height: 85vh;
         padding-bottom: 35px;
     }
 
