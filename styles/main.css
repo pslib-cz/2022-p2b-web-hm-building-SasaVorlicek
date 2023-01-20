@@ -99,7 +99,7 @@ p {
 .page-navbar__logo {
     height: 40px;
     width: auto;
-    margin: 25px 0; /*vycentrovat hamburger i logo stejně od kraje, logo má nějaký okraj už v obrázku?*/
+    margin: 25px 10px; /*vycentrovat hamburger i logo stejně od kraje, logo má nějaký okraj už v obrázku?*/
 }
 
 .page-navbar__hamburger {
@@ -166,18 +166,24 @@ p {
 }
 
 .page-header {
+    box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.8);
     background-image: url("../media/pageheader-1920w.jpg"); /*Zoom do obrázku*/
 
+    min-height: 50vh;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(39, 39, 39, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
 }
 
 .page-header__main-heading {
     color: #ffffff;
     text-align: center;
-    padding-top: 90px;
     font-size: 1.9em;
     font-weight: 800;
 }
@@ -185,10 +191,10 @@ p {
 .page-header__second-heading {
     color: #ffffff;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
     font-size: 1.4em;
     font-weight: 300;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .page-header__cta {
@@ -370,10 +376,7 @@ p {
 
     .page-navbar {
         position: absolute;
-        top: 30px;
-        width: 90%;
-        left: 0;       /*nejde vycentrovat*/
-        right: 0;
+        margin-top: 30px;
     }
 
     .page-navbar__logo {
@@ -385,7 +388,7 @@ p {
         background-color: #ffffff;
         width: 40%;
         padding: 0;
-        padding-right: 25px;;
+        margin: 0 20px;
         display: flex;
         justify-content: space-between;
     }
@@ -403,6 +406,10 @@ p {
     .page-navbar__items li:hover {      /*dodělat*/
         background-color: var(--primary);
         color: #ffffff;
+    }
+
+    .page-header {
+        min-height: 70vh;
     }
 
     .page-header__cta {
