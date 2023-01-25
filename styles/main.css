@@ -196,6 +196,10 @@ a {
     
 }
 
+.other-pages-header {
+    display: none;
+}
+
 .page-header__main-heading {
     color: #ffffff;
     text-align: center;
@@ -443,6 +447,15 @@ a {
         padding-bottom: 35px;
     }
 
+    .other-pages-header {
+        display: flex;
+        min-height: 12vh;
+    }
+
+    .other-pages-header * {
+        display: none;
+    }
+
     .page-header__main-heading {
         font-size: 4em;
     }
@@ -496,14 +509,17 @@ a {
         margin-top: 110px;
     }
 
-    .reference-item {                                     /* dodělat skrytí textu a jeho nahození na obrázek */
+    .reference-item {                                   
         position: relative;
     }
 
     .reference-item__img:hover + .reference-item__info {
-        display: block;
         background-color: rgba(235, 108, 39, 0.9);
         color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .reference-item__img:hover + .reference-item__info * {
         color: #ffffff;
