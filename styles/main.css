@@ -94,6 +94,10 @@ a {
 
 /*INDEX*/
 
+.website-page-header {
+    position: relative;
+}
+
 .page-navbar {
     width: 100%;
     background-color: var(--bg);
@@ -164,7 +168,7 @@ a {
     font-weight: 700;
 }
 
-.page-navbar__items li a {
+.page-navbar__item {
     color: #ffffff;
 }
 
@@ -174,10 +178,6 @@ a {
 
 .is-active {
     display: block;
-}
-
-.website-page-header {
-    position: relative;
 }
 
 .page-header {
@@ -385,11 +385,13 @@ a {
         display: none;
     }
 
-    .page-navbar {                                        /* vycentrovat na střed (100px od kraje)*/
+    .page-navbar {
+        width: inherit;
         position: absolute;
-        width: 80%;
-        margin-top: 30px;
-        right: 0;
+        top: 35px;
+        right: 100px;
+        left: 100px;
+        height: 65px;
     }
 
     .page-navbar__logo {
@@ -399,11 +401,11 @@ a {
     .page-navbar__items {
         position: static;
         background-color: #ffffff;
-        width: 40%;
+        width: 50%;
         padding: 0;
-        margin: 0 20px;
+        margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .page-navbar__items li {
@@ -411,19 +413,28 @@ a {
         font-weight: 400;
         font-size: 0.8em;
         padding: 0;
+        display: flex;
     }
 
     .page-navbar__items li a {
-        color: var(--text);
+        height: 65px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
     }
 
     .nav-active {
         background-color: var(--primary);
-        color: #ffffff;
     }
 
-    .page-navbar__items li:hover {                                   /*dodělat hover na oranžovou*/ 
+    .nav-active a {
+        color: #ffffff;
+    }
+    .page-navbar__items li:hover {                                   
         background-color: var(--primary);
+        transition: 0.2s;
+    }
+    .page-navbar__items li:hover > a { 
         color: #ffffff;
     }
 
@@ -485,12 +496,30 @@ a {
         margin-top: 110px;
     }
 
-    .reference-item {                         /* dodělat skrytí textu a jeho nahození na obrázek */
-        color:rgba(39, 39, 39, 0.8); /*odstranit*/
+    .reference-item {                                     /* dodělat skrytí textu a jeho nahození na obrázek */
+        position: relative;
+    }
+
+    .reference-item__img:hover + .reference-item__info {
+        display: block;
+        background-color: rgba(235, 108, 39, 0.9);
+        color: #ffffff;
+    }
+    .reference-item__img:hover + .reference-item__info * {
+        color: #ffffff;
     }
 
     .reference-item__info {
-        color:#3A3A3A; /*odstranit*/
+        display: none;
+        position: absolute;
+        background-color: var(--primary);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .reference-item__info * {
+        color: #ffffff;
     }
 
     .page-footer { 
