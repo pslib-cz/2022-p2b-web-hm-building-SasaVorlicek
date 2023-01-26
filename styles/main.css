@@ -237,12 +237,12 @@ a {
 
 .services_reference-header__heading {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .services_reference-header__text {
     font-family: Inter;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .services__items {
@@ -381,7 +381,7 @@ a {
     padding: 0;
     margin-left: 30px;
     margin-top: 0;
-    margin-bottom: 50px;
+    list-style-type: disc;
 }
 
 .services-list li::marker {
@@ -410,6 +410,11 @@ a {
 
 .gallery__img--tall {
     grid-row-start: span 3;
+}
+
+.services-list__heading {
+    font-weight: bold;
+    margin: 0;
 }
 
 
@@ -517,10 +522,6 @@ a {
         margin: 0 100px;
         margin-top: 100px;
     }
-
-    .services_reference-header {
-        margin-bottom: 100px;
-    }
                                       
     .services_reference-header__heading {
         text-align: center;
@@ -599,12 +600,12 @@ a {
 
     .services_reference-header__text--left_align {
         text-align: left;
-        width: 75%;
+        width: 70%;
         margin-left: 0;
     }
 
-    .services-list__padding {
-        padding-left: 50px;
+    .services-list--padding {
+        padding-left: 60px;
     }
 
 }
