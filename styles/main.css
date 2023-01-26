@@ -418,6 +418,13 @@ a {
 }
 
 
+/* KONTAKT */
+
+.contact {
+    margin-left: 300px;
+}
+
+
 
 
 /* DESKTOP 1920w verze */
@@ -606,6 +613,12 @@ a {
 
     .services-list--padding {
         padding-left: 60px;
+    }
+
+    /* KONTAKT */
+
+    .contact {
+        margin-left: 100px;
     }
 
 }
