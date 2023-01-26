@@ -375,21 +375,26 @@ a {
 }
 
 
-/* NOVOSTAVBY úpravy */
+/* OSTATNI STRANKY MODIFIKACE  */
 
-.services-novostavby-list {
+.services-list {
     padding: 0;
     margin-left: 30px;
     margin-top: 0;
+    margin-bottom: 50px;
 }
 
-.services-novostavby-list li::marker {
+.services-list li::marker {
     color: var(--primary);
     font-size: 2em;
 }
 
-.services_reference-header--novostavby {
+.services_reference-header--margin {
     margin-bottom: 20px;
+}
+
+.services_reference-header__text--left_align:first-of-type {
+    margin-top: 40px;
 }
 
 
@@ -499,7 +504,7 @@ a {
     }
     .services_reference-header__heading {
         text-align: center;
-        font-size: 2.6em;
+        font-size: 2.8em;
     } 
 
     .services_reference-header__text {
@@ -570,13 +575,17 @@ a {
         font-size: 2.6em;
     }
 
-    /* NOVOSTAVBY úpravy */
+    /* OSTATNI STRANKY MODIFIKACE */
 
-    .novostavby-text {
+    .services_reference-header__text--left_align {
         text-align: left;
         width: 75%;
         margin-left: 0;
-}
+    }
+
+    .services-list__padding {
+        padding-left: 50px;
+    }
 
 }
 
