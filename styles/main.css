@@ -407,7 +407,7 @@ img {
 }
 
 .services_reference-header--margin {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .services_reference-header__text--left_align:first-of-type {
@@ -415,10 +415,13 @@ img {
 }
 
 .services__gallery {
-    display: grid;                                                      /* PŘIDAT VÍCE SLOUPCŮ */
-    grid-auto-columns: 1fr;
+    display: grid;                                                     
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-auto-rows: auto;
     grid-gap: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .gallery__img {
@@ -757,6 +760,3 @@ img {
     }
 
 }
-
-
-/*  https://www.w3schools.com/css/css3_images.asp */
