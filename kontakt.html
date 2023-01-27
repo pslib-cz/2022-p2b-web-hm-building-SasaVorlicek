@@ -12,6 +12,7 @@
     <header class="website-page-header">
         <nav class="page-navbar">
             <a href="./index.html"><img class="page-navbar__logo" alt="Logo stránky" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU</a>
             <button class="page-navbar__hamburger" onclick="Hamburger()">&#xe9bd;</button>
             <ul id="hamburger" class="page-navbar__items">
                 <li><a href="./index.html">DOMŮ</a></li>
@@ -29,7 +30,7 @@
     </header> 
 
     <section id="services" class="services">
-        <header class="services_reference-header">
+        <header class="services_reference-header services_reference-header--margin">
             <h3 class="services_reference-header__heading">Kontaktujte nás</h3>
             <p class="services_reference-header__text">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         </header>
@@ -42,36 +43,28 @@
         </div>
         <img class="contact__map" alt="Mapa s lokací naší firmy" src="./media/mapa.jpg">
     </section>
-    <section class="contact-formblock">
-        <p class="contact-formblock__heading">Nezávazná poptávka služeb</p>
-        <p class="contact-formblock__subheading">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <form class="contact-form">
-            <label class="contact-form__label">Jméno a příjmení</label>
-            <input class="contact-form__input" type="text" required>
-            <label class="contact-form__label">E-mail</label>
-            <input class="contact-form__input" type="email" required>
-            <label class="contact-form__label">Telefon</label>
-            <input class="contact-form__input" type="tel" required>
-            <label class="contact-form__label">Poptávaná služba</label>
-            <select class="contact-form__input">
+    <section class="formblock">
+        <p class="formblock__heading">Nezávazná poptávka služeb</p>
+        <p class="formblock__subheading">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <form class="formblock__form">
+            <label class="form__label" required>Jméno a příjmení</label>
+            <input class="form__input" type="text" required>
+            <label class="form__label" required>E-mail</label>
+            <input class="form__input" type="email" required>
+            <label class="form__label" required>Telefon</label>
+            <input class="form__input" type="tel" required>
+            <label class="form__label">Poptávaná služba</label>
+            <select class="form__input form__input--select">
                 <option>Novostavba</option>
-                <option>Novostavba</option>
-                <option>Novostavba</option>
-                <option>Novostavba</option>
+                <option>Průmyslové stavby</option>
+                <option>Rekonstrukce domů</option>
+                <option>Komunikace a zpevněné plochy</option>
             </select>
-            <label class="contact-form__label">Poznámka</label>
-            <textarea class="contact-form__input contact-form__input--large" type="text"></textarea>
-            
-
+            <label class="form__label">Poznámka</label>
+            <textarea class="form__input form__input--large" type="text"></textarea>
+            <input class="form__submit" type="submit" value="Odeslat nezávaznou poptávku">
         </form>
     </section>
-
-
-    <footer class="page-footer">
-        <p class="page-footer__heading">Plácneme si pro Váš projekt?</p>
-        <p class="page-footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <p class="page-footer_cta"><a href="./kontakt.html" class="button button--white">Nezávazně poptat</a></p>
-    </footer>
 
 
     <script>
