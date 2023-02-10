@@ -681,7 +681,7 @@ img {
         position: relative;
     }
 
-    .reference-item:hover + .reference-item__info {                  /*Občas náhodně problikává nebo se nezobrazí, nevím proč?*/
+    .reference-item__hover:hover .reference-item__info {                  /*Občas náhodně problikává nebo se nezobrazí, nevím proč?*/
         background-color: rgba(235, 108, 39, 0.9);
         color: #ffffff;
         display: flex;
@@ -689,14 +689,11 @@ img {
         align-items: center;
         justify-content: center;
     }
-    .reference-item__img:hover + .reference-item__info * {
-        color: #ffffff;
-    }
+
 
     .reference-item__info {
         display: none;
         position: absolute;
-        background-color: var(--primary);
         top: 0;
         bottom: 0;
         left: 0;
