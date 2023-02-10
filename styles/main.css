@@ -223,10 +223,11 @@ img {
 .page-header__second-heading {
     color: #ffffff;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: 300;
     padding-bottom: 30px;
     padding-top: 10px;
+    display: block;
 }
 
 .page-header__cta {
@@ -621,7 +622,8 @@ img {
     }
 
     .page-header__second-heading {
-        font-size: 2em;
+        font-size: 2rem;
+        
     }
 
     .page-header__cta {
