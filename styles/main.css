@@ -60,6 +60,7 @@ img {
     font-weight: 700;
     font-size: 14px;
     user-select: none;
+    display: inline-block;
 }
 
 .button-2 {
