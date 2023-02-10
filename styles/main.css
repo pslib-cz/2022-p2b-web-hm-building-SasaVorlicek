@@ -105,7 +105,6 @@ img {
 }
 
 .page-navbar {
-    width: 100%;
     background-color: var(--bg);
     display: flex;
     justify-content: space-between;
@@ -354,7 +353,6 @@ img {
 
 .page-footer {
     background-color: var(--primary);
-    width: 100%;
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -681,7 +679,7 @@ img {
         position: relative;
     }
 
-    .reference-item__img:hover + .reference-item__info {                  /*Občas náhodně problikává nebo se nezobrazí, nevím proč?*/
+    .reference-item:hover + .reference-item__info {                  /*Občas náhodně problikává nebo se nezobrazí, nevím proč?*/
         background-color: rgba(235, 108, 39, 0.9);
         color: #ffffff;
         display: flex;
