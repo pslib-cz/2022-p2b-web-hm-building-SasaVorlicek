@@ -53,7 +53,7 @@ img {
 }
 
 .button {
-    padding: 12px 40px; 
+    padding: 1em 3em; 
     background-color: var(--primary);
     color: #ffffff;
     font-family: Inter;
@@ -67,23 +67,25 @@ img {
     border: 1px dashed #EB6C27;
     color: var(--primary);
     background-color: #ffffff;
-    padding: 12px 40px;
+    padding: 1em 3em; 
     font-family: Inter;
     font-weight: 700;
     font-size: 14px;
     user-select: none;
+    display: inline-block;
 }
 
 .button--white {
     background-color: #ffffff;
     color: var(--primary);
-    padding: 20px 50px;
+    padding: 1.5em 3.5em;
 }
 
 .button--arrow {
     display: inline-flex;
     align-items: center;
-    padding: 10px 36px; 
+    justify-content: center;
+    padding: 0.7em 2.5em; 
 }
 
 .button--arrow::after {
@@ -141,7 +143,7 @@ img {
 .hamburger__text {
     color: var(--text);
     font-size: 0.75em;
-    margin-right: 20px;
+    margin-right: 1.5em;
     display: flex;
     flex-direction: column;
 }
@@ -153,7 +155,7 @@ img {
     background-color: var(--primary);
     
     position: absolute;
-    padding: 35px 0;
+    padding: 2em 0;
     padding-left: 20px;
     top: 100%;
     left: 0;
@@ -175,7 +177,7 @@ img {
 }
 
 .page-navbar__items li {
-    padding-bottom: 16px;
+    padding-bottom: 1em;
     text-decoration: underline;
     font-weight: 700;
 }
@@ -226,7 +228,7 @@ img {
     font-size: 1.4rem;
     font-weight: 300;
     padding-bottom: 1.8em;
-    padding-top: 10px;
+    padding-top: 0.5em;
     display: block;
 }
 
@@ -238,11 +240,11 @@ img {
 .services, 
 .reference {
     margin: 0 30px;
-    margin-top: 60px;
+    margin-top: 4em;
 }
 
 .services_reference-header {
-    margin-bottom: 100px;
+    margin-bottom: 6.5em;
 }
 
 .services_reference-header__heading {
@@ -261,13 +263,13 @@ img {
 }
 
 .services-item {
-    padding-bottom: 40px;
+    padding-bottom: 3.5em;
 }
 
 .services-item__img {
     width: 100%;
     min-height: 134px;
-    margin-bottom: 20px;
+    margin-bottom: 1.5em;
 }
 
 .services-item__img--odd {
@@ -282,14 +284,14 @@ img {
     font-family: OpenSans;
     font-weight: 700;
     font-size: 1.3em;
-    padding-bottom: 15px;
+    padding-bottom: 1em;
 }
 
 .services-item__text {
     font-family: Inter;
     font-weight: 400;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 1.5em;
 }
 
 .promote {
@@ -309,7 +311,7 @@ img {
 }
 
 .promote__text:nth-child(2) {
-    padding-bottom: 15px;
+    padding-bottom: 1em;
     margin: 0;
 }
 
@@ -318,7 +320,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 4em;
 }
 
 .reference-item {
@@ -333,7 +335,7 @@ img {
     text-align: center;
     font-weight: 700;
     font-size: 1.4em;
-    margin: 10px 0;
+    margin: 0.7em 0;
 }
 
 .reference-item__text {
@@ -349,33 +351,33 @@ img {
 
 .page-footer {
     background-color: var(--primary);
-    margin-bottom: 15px;
+    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 5em;
 }
 
 .page-footer__heading {
     color: #ffffff;
     font-size: 1.4em;
     font-weight: 700;
-    margin-top: 70px;
-    margin-bottom: 15px;
+    margin-top: 4em;
+    margin-bottom: 1em;
 }
 
 .page-footer__text {
     color: #ffffff;
     text-align: center;
     font-family: Inter;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
     font-weight: 400;
-    padding: 0 15px;
+    padding: 0 1em;
 }
 
 .page-footer_cta {
-    margin-bottom: 70px;
+    margin-bottom: 4.5em;
 }
 
 
@@ -383,7 +385,7 @@ img {
 
 .services-list {
     padding: 0;
-    margin-left: 30px;
+    margin-left: 2em;
     margin-top: 0;
     list-style-type: disc;
 }
@@ -394,7 +396,7 @@ img {
 }
 
 .services_reference-header--margin {
-    margin-bottom: 30px;
+    margin-bottom: 2em;
 }
 
 .services_reference-header__text--left_align:first-of-type {
@@ -436,11 +438,11 @@ img {
     color: var(--primary);
     font-weight: 700;
     font-size: 0.9em;
-    margin-bottom: 60px;
+    margin-bottom: 4em;
 }
 
 .contact__info {
-    margin-left: 30px;
+    margin-left: 2em;
 }
 
 .contact__info *::before {
