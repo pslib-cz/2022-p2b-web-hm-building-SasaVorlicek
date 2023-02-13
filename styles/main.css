@@ -467,9 +467,9 @@ img {
 } 
 
 .formblock {
-    margin: 0 30px;
-    margin-top: 60px;
-    margin-bottom: 100px;
+    margin: 0 2em;
+    margin-top: 5em;
+    margin-bottom: 8em;
 }
 
 .formblock__form *::selection {
@@ -489,38 +489,38 @@ img {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 2em;
 }
 
 .form__label {
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
     user-select: none;
 }
 
 .form__label[required]::after {
     content: "*";
     color: var(--primary);
-    padding-left: 10px;
+    padding-left: 0.7em;
 }
 
 .form__input {                   
     height: 40px;
     border: 1px solid var(--primary);
-    margin-bottom: 15px;
-    padding-left: 8px;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
 }
 
 .form__input--large {
     height: 200px;
-    padding-top: 8px;
+    padding-top: 0.5em;
 }
 
 .form__submit {
     color: white;
     border: none;
     background-color: var(--primary);
-    padding: 15px 20px;
+    padding: 1em 1.5em;
     width: 260px;
     font-size: 0.9em;
     font-weight: 700;
@@ -561,7 +561,7 @@ img {
     }
 
     .page-navbar__logo {
-        margin: 10px;
+        margin: 0.8em;
     }
 
     .page-navbar__items {
@@ -584,7 +584,7 @@ img {
 
     .page-navbar__items li a {
         height: 65px;
-        padding: 0 20px;
+        padding: 0 1.5em;
         display: flex;
         align-items: center;
         color: var(--text);
@@ -607,7 +607,7 @@ img {
 
     .page-header {
         min-height: 85vh;
-        padding-bottom: 35px;
+        padding-bottom: 2em;
     }
 
     .page-header--other {
@@ -634,8 +634,8 @@ img {
 
     .services,
     .reference {
-        margin: 0 100px;
-        margin-top: 100px;
+        margin: 0 8em;
+        margin-top: 8em;
     }
                                       
     .services_reference-header__heading {
@@ -646,7 +646,7 @@ img {
     .services_reference-header__text {
         text-align: center;
         width: 62%;
-        margin: 16px auto;
+        margin: 1em auto;
     }
 
     .services__items {
@@ -665,9 +665,9 @@ img {
     }
 
     .promote {
-        margin-top: 100px;
-        padding-left: 100px;
-        padding-right: 100px;
+        margin-top: 8em;
+        padding-left: 8em;
+        padding-right: 8em;
     }
 
     .promote__text {
@@ -675,14 +675,14 @@ img {
     }
 
     .reference {
-        margin-top: 110px;
+        margin-top: 8.5em;
     }
 
     .reference-item {                                   
         position: relative;
     }
 
-    .reference-item__hover:hover .reference-item__info {                  /*Občas náhodně problikává nebo se nezobrazí, nevím proč?*/
+    .reference-item__hover:hover .reference-item__info {
         background-color: rgba(235, 108, 39, 0.9);
         color: #ffffff;
         display: flex;
@@ -705,7 +705,7 @@ img {
     }
 
     .page-footer { 
-        margin-top: 180px;
+        margin-top: 11em;
     }
 
     .page-footer__heading {
@@ -721,14 +721,14 @@ img {
     }
 
     .services-list--padding {
-        padding-left: 60px;
+        padding-left: 5em;
     }
 
     /* KONTAKT */
 
     .contact {
-        margin-left: 100px;
-        margin-top: 100px;
+        margin-left: 8em;
+        margin-top: 8em;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -747,7 +747,7 @@ img {
     }
 
     .formblock {
-        margin: 80px 100px;
+        margin: 7em 8em;
     }
 
 }
